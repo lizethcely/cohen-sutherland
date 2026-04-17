@@ -18,7 +18,16 @@ input { width:60px; margin:5px; }
     xmax: <input id="xmax" type="number" value="350">
     ymin: <input id="ymin" type="number" value="100">
     ymax: <input id="ymax" type="number" value="250">
-<button onclick="actualizarViewport()">Actualizar</button>
+    <button onclick="actualizarViewport()">Actualizar</button>
 
+    x1: <input id="x1">
+    y1: <input id="y1">
+    x2: <input id="x2">
+    y2: <input id="y2">
+    <button onclick="dibujarManual()">Dibujar</button>
+
+    <canvas id="canvas" width="500" height="350"></canvas>
+
+    
 </body>
 </html>
