@@ -58,6 +58,15 @@ function cohenSutherland(x1, y1, x2, y2) {
     let c1 = calcularCodigo(x1, y1);
     let c2 = calcularCodigo(x2, y2);
 
+    while(true){
+        if ((c1 | c2) === 0) {
+            return [x1, y1, x2, y2];
+        } else if ((c1 & c2) !== 0) {
+            return null;
+        } 
+
+    }
+
 }
 </script>
 </body>
