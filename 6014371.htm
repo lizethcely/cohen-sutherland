@@ -130,6 +130,10 @@ function dibujarLinea(x1, y1, x2, y2) {
     dibujando = true;
 });
 
+canvas.addEventListener("mouseup", (e) => {
+    if (!dibujando) return;
+}
+
 
 
 </script>
