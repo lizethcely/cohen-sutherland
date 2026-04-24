@@ -76,6 +76,11 @@ function cohenSutherland(x1, y1, x2, y2) {
             } else if (fuera & RIGHT) {
                 y = y1 + (y2 - y1) * (xmax - x1) / (x2 - x1);
                 x = xmax;
+            }else if (fuera & LEFT) {
+                y = y1 + (y2 - y1) * (xmin - x1) / (x2 - x1);
+                x = xmin;
+            }
+        
 
             
 
