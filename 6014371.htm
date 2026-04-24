@@ -109,6 +109,8 @@ function dibujarLinea(x1, y1, x2, y2) {
         let y2 = parseFloat(document.getElementById("y2").value);
 
         redibujar();
+
+        dibujarLinea(x1, y1, x2, y2);
     }
 
 
