@@ -90,15 +90,17 @@ function cohenSutherland(x1, y1, x2, y2) {
             }
         }
     }
+}
 
-    function dibujarLinea(x1, y1, x2, y2) {
+function dibujarLinea(x1, y1, x2, y2) {
     ctx.beginPath();
     ctx.moveTo(x1, y1);
     ctx.lineTo(x2, y2);
-    ctx.stroke();
-}
+    ctx.stroke();}
 
-}
+    function redibujar() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeRect(xmin, ymin, xmax - xmin, ymax - ymin);}
 </script>
 </body>
 </html>
