@@ -84,7 +84,11 @@ function cohenSutherland(x1, y1, x2, y2) {
              if (fuera === c1) {
                 x1 = x; y1 = y;
                 c1 = calcularCodigo(x1, y1);
-            } 
+            } else {
+                x2 = x; y2 = y;
+                c2 = calcularCodigo(x2, y2);
+            }
+        }
         
 
             
