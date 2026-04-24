@@ -147,10 +147,15 @@ canvas.addEventListener("mouseup", (e) => {
     ctx.lineWidth = 3;
     dibujarLinea(r[0], r[1], r[2], r[3]);
     ctx.lineWidth = 1;}
+});
 
-}
+function actualizarViewport() {
+    xmin = parseFloat(document.getElementById("xmin").value);
+    xmax = parseFloat(document.getElementById("xmax").value);
+    ymin = parseFloat(document.getElementById("ymin").value);
+    ymax = parseFloat(document.getElementById("ymax").value);
 
-
+    redibujar();}
 
 </script>
 </body>
