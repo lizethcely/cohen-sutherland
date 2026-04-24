@@ -112,6 +112,12 @@ function dibujarLinea(x1, y1, x2, y2) {
 
         dibujarLinea(x1, y1, x2, y2);
         let r = cohenSutherland(x1, y1, x2, y2);
+
+         if (r) {
+        ctx.lineWidth = 3;
+        dibujarLinea(r[0], r[1], r[2], r[3]);
+        ctx.lineWidth = 1;
+    }
     }
 
 
