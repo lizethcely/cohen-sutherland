@@ -123,6 +123,13 @@ function dibujarLinea(x1, y1, x2, y2) {
     let dibujando = false;
     let x1, y1;
 
+    canvas.addEventListener("mousedown", (e) => {
+    const rect = canvas.getBoundingClientRect();
+    x1 = e.clientX - rect.left;
+    y1 = e.clientY - rect.top;
+    dibujando = true;
+});
+
 
 
 </script>
