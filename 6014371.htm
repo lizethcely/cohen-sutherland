@@ -80,6 +80,11 @@ function cohenSutherland(x1, y1, x2, y2) {
                 y = y1 + (y2 - y1) * (xmin - x1) / (x2 - x1);
                 x = xmin;
             }
+
+             if (fuera === c1) {
+                x1 = x; y1 = y;
+                c1 = calcularCodigo(x1, y1);
+            } 
         
 
             
