@@ -101,6 +101,16 @@ function dibujarLinea(x1, y1, x2, y2) {
     function redibujar() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeRect(xmin, ymin, xmax - xmin, ymax - ymin);}
+
+    function dibujarManual() {
+        let x1 = parseFloat(document.getElementById("x1").value);
+        let y1 = parseFloat(document.getElementById("y1").value);
+        let x2 = parseFloat(document.getElementById("x2").value);
+        let y2 = parseFloat(document.getElementById("y2").value);
+    }
+
+
+
 </script>
 </body>
 </html>
