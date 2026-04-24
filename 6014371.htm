@@ -132,6 +132,10 @@ function dibujarLinea(x1, y1, x2, y2) {
 
 canvas.addEventListener("mouseup", (e) => {
     if (!dibujando) return;
+
+     const rect = canvas.getBoundingClientRect();
+    let x2 = e.clientX - rect.left;
+    let y2 = e.clientY - rect.top;
 }
 
 
